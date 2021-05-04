@@ -5,29 +5,27 @@
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class OBERFLÄCHE
+class OBERFLÄCHE
 {
-    // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int x;
-
+    {FRAGE fragefeld;
+    JOKER jokerfeld;
     /**
-     * Konstruktor für Objekte der Klasse OBERFLÄCHE
-     */
-    public OBERFLÄCHE()
-    {
-        // Instanzvariable initialisieren
-        x = 0;
-    }
-
-    /**
-     * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
      * 
-     * @param  y    ein Beispielparameter für eine Methode
-     * @return        die Summe aus x und y
-     */
-    public int beispielMethode(int y)
+     *PUNKTESTAND punktefeld;
+     *ANTWORT möglichkeiten;
+    int x;
+    int y;
+    OBERFLÄCHE()
     {
-        // tragen Sie hier den Code ein
-        return x + y;
-    }
+       fragefeld = new FRAGE();
+       fragefeld.FarbeSetzen();
+       fragefeld.PositionSetzen(x, y);
+       jokerfeld = new JOKER();
+       jokerfeld.FarbeSetzen();
+       jokerfeld.PositionSetzen(x, y);
+       punktefeld = new PUNKTESTAND();
+       punktefeld.FarbeSetzen();
+       punktefeld.PositionSetzen(x, y);     
+       */ 
+    }   
 }
