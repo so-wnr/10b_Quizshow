@@ -16,7 +16,7 @@ class OBERFLÄCHE
      */
     public OBERFLÄCHE()
     {
-        fenster = new Frame("UI");
+        fenster = new Frame("OB");
         fenster.setSize(600,400);
         fenster.setLocation(0,30);
         fenster.setVisible(true);
