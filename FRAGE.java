@@ -1,9 +1,9 @@
 
 /**
- * Beschreiben Sie hier die Klasse FRAGE.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
+ * die Klasse Frage dreht sich um die einzelnen Fragefelder,
+ * dass diese am ende mit unterschiedlicher beschriftung unabhängig angezeigt werden,
+ * muss noch umgesetzt werden.
+ *
  */
 class FRAGE extends OBERFLÄCHE 
 {
@@ -15,4 +15,7 @@ class FRAGE extends OBERFLÄCHE
     {
         fragestellung = new FRAGE();
     }
+    
+    
+    
 }

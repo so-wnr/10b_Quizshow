@@ -1,9 +1,6 @@
 
 /**
- * Beschreiben Sie hier die Klasse JOKER.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
+ * der joker soll bei Aktivierung einmalig eine der antwortmöglichkeiten ausschließen.
  */
 public class JOKER
 {
