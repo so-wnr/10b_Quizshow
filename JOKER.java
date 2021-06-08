@@ -1,11 +1,17 @@
 
 /**
+<<<<<<< HEAD
  * Beschreiben Sie hier die Klasse JOKER.
  * 
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
 class JOKER extends OBERFLÄCHE
+=======
+ * der joker soll bei Aktivierung einmalig eine der antwortmöglichkeiten ausschließen.
+ */
+public class JOKER
+>>>>>>> 271a70c339a7bb8f777c03c9a274870b3bf66c05
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     private int x;
