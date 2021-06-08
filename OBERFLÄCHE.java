@@ -12,9 +12,9 @@ class OBERFLÄCHE
     Button antwortd;
 
     /**
-     * Constructor for objects of class OBERFLAECHE
+     * Konstruktor für Objekte der Klasse OBERFLÄCHE
      */
-    public OBERFLÄCHE()
+    OBERFLÄCHE()
     {
         fenster = new Frame("OB");
         fenster.setSize(600,400);
@@ -35,22 +35,34 @@ class OBERFLÄCHE
         antwortA.setVisible(true);
         antwortA.setSize(100,30);
         antwortA.setEnabled(true);
-        antwortA.addActionListener(new ActionListener()
-        {
-            public void actionPerformed(ActionEvent e)
-            {
-                //Hier wird Frage A ausgewählt
-            }
-        });
-        fenster.add(antwortA);
+        antwortA.addActionListener(new ActionListener());
         
-        fenster.addWindowListener(new WindowAdapter()
-        {
-            public void windowClosing(WindowEvent e)
-            {
-                System.exit(1);
-            }
-        });
-    }
-}
-
+        antwortB = new Button();
+        antwortB.setLocation(30,100);
+        antwortB.setLabel("B");
+        antwortB.setVisible(true);
+        antwortB.setSize(100,30);
+        antwortB.setEnabled(true);
+        antwortB.addActionListener(new ActionListener()); 
+        
+        antwortC = new Button();
+        antwortC.setLocation(60,150);
+        antwortC.setLabel("C");
+        antwortC.setVisible(true);
+        antwortC.setSize(100,30);
+        antwortC.setEnabled(true);
+        antwortC.addActionListener(new ActionListener());
+        
+        antwortD = new Button();
+        antwortD.setLocation(40,120);
+        antwortD.setLabel("D");
+        antwortD.setVisible(true);
+        antwortD.setSize(100,30);
+        antwortD.setEnabled(true);
+        antwortD.addActionListener(new ActionListener());
+        
+        
+    
+    
+     
+    
