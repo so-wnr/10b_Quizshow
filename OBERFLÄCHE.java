@@ -61,8 +61,14 @@ class OBERFLÄCHE
         antwortD.setEnabled(true);
         antwortD.addActionListener(new ActionListener());
         
-        
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                 //Hier wird die Frage A ausgewählt       
+                
+                
+        }
+    }   
     
-    
-     
+}    
     
