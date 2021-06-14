@@ -12,16 +12,21 @@
  *
 >>>>>>> 271a70c339a7bb8f777c03c9a274870b3bf66c05
  */
-class FRAGE extends OBERFLÄCHE 
+class FRAGE
 {
-    FRAGE fragestellung;
-    int x;
-    int y;
+    String fragestellung;
+    String antwortA;
+    String antwortB;
+    String antwortC;
+    String antwortD;
     
     FRAGE()
     {
-        fragestellung = new FRAGE();
-        
+        fragestellung = "";
+        antwortA = "";
+        antwortB = "";
+        antwortC = "";
+        antwortD = "";
     }
     
     
