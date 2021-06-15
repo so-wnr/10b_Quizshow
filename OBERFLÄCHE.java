@@ -135,7 +135,7 @@ class OBERFLÄCHE
         }
         }); 
         fenster.add(joker);
-        
+
         //*Fragenliste
         frage1=new FRAGE();
         frage1.fragestellung="Welche Farbe hat Gras?";
