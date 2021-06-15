@@ -147,6 +147,9 @@ class OBERFLÄCHE
     
 }
       //Hintergrund gestallten,färben*/
+  
+     //*wie verbinde ich frage mit den buttons/Feldern
+     //* Wie schaffe ich es dass die Frage + Antwort aufgerufen wird  
       //festlegen wie oft man Joker verwenden kann und was beim Auswählen passiert*/
      //*Startbutton einfügen und überlegen wie Oberfläche entscheidet wann nächste Frage geöffnet oder angezeigt wird
 }
