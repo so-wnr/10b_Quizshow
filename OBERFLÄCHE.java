@@ -113,7 +113,7 @@ class OBERFLÄCHE
             public void actionPerformed(ActionEvent e)
             {
                  //Hier startet man das Spiel      
-                
+                start.setVisible(false);
                 
         }
         }); 
