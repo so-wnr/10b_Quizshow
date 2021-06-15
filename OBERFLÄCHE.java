@@ -11,6 +11,7 @@ class OBERFLÄCHE
     Button antwortC;
     Button antwortD;
     Button start;
+    Button joker;
     
     FRAGE frage1;
     
@@ -118,6 +119,23 @@ class OBERFLÄCHE
         }); 
         fenster.add(start);
         
+        joker= new Button();
+        joker.setLocation(500,40);
+        joker.setLabel("JOKER");
+        joker.setVisible(true);
+        joker.setSize(50,50);
+        joker.setEnabled(true);
+        joker.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                 //Hier wählt man den Joker      
+                
+                
+        }
+        }); 
+        fenster.add(joker);
+        
         //*Fragenliste
         frage1=new FRAGE();
         frage1.fragestellung="Welche Farbe hat Gras?";
@@ -129,6 +147,7 @@ class OBERFLÄCHE
     
 }
       //Hintergrund gestallten,färben*/
+      //festlegen wie oft man Joker verwenden kann und was beim Auswählen passiert*/
      //*Startbutton einfügen und überlegen wie Oberfläche entscheidet wann nächste Frage geöffnet oder angezeigt wird
 }
    
