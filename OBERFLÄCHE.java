@@ -1,4 +1,4 @@
-
+ 
 import java.awt.*;
 import java.awt.event.*;
 
@@ -10,6 +10,7 @@ class OBERFLÄCHE
     Button antwortB;
     Button antwortC;
     Button antwortD;
+    Button start;
     
     FRAGE frage1;
     
@@ -28,12 +29,12 @@ class OBERFLÄCHE
         fragetext = new Label();
         fragetext.setText("Hier steht später die Frage und ggf. die Antworten.");
         fragetext.setVisible(true);
-        fragetext.setLocation(200,50);
+        fragetext.setLocation(100,50);
         fragetext.setSize(400,50);
         fenster.add(fragetext);
         
         antwortA = new Button();
-        antwortA.setLocation(10,250);
+        antwortA.setLocation(100,180);
         antwortA.setLabel("A");
         antwortA.setVisible(true);
         antwortA.setSize(100,30);
@@ -42,7 +43,7 @@ class OBERFLÄCHE
         {
             public void actionPerformed(ActionEvent e)
             {
-                 //Hier wird die Antwort A ausgewählt       
+                 //Hier wird die Antwort A ausgewählt
                 
                 
         }
@@ -50,7 +51,7 @@ class OBERFLÄCHE
         fenster.add(antwortA);
         
         antwortB = new Button();
-        antwortB.setLocation(30,100);
+        antwortB.setLocation(400,180);
         antwortB.setLabel("B");
         antwortB.setVisible(true);
         antwortB.setSize(100,30);
@@ -67,7 +68,7 @@ class OBERFLÄCHE
         fenster.add(antwortB); 
         
         antwortC = new Button();
-        antwortC.setLocation(60,150);
+        antwortC.setLocation(100,280);
         antwortC.setLabel("C");
         antwortC.setVisible(true);
         antwortC.setSize(100,30);
@@ -84,7 +85,7 @@ class OBERFLÄCHE
         fenster.add(antwortC);
         
         antwortD = new Button();
-        antwortD.setLocation(40,120);
+        antwortD.setLocation(400,280);
         antwortD.setLabel("D");
         antwortD.setVisible(true);
         antwortD.setSize(100,30);
@@ -100,6 +101,23 @@ class OBERFLÄCHE
         }); 
         fenster.add(antwortD);
         
+        start = new Button();
+        start.setLocation(200,150);
+        start.setLabel("START");
+        start.setVisible(true);
+        start.setSize(200,100);
+        start.setEnabled(true);
+        start.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                 //Hier startet man das Spiel      
+                
+                
+        }
+        }); 
+        fenster.add(start);
+        
         //*Fragenliste
         frage1=new FRAGE();
         frage1.fragestellung="Welche Farbe hat Gras?";
@@ -110,7 +128,7 @@ class OBERFLÄCHE
         
     
 }
-     /*Labels an einen schönen Platz tun und groß genug machen */
+      //Hintergrund gestallten,färben*/
      //*Startbutton einfügen und überlegen wie Oberfläche entscheidet wann nächste Frage geöffnet oder angezeigt wird
 }
    
