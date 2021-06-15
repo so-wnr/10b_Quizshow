@@ -12,7 +12,7 @@ class OBERFLÄCHE
     Button antwortD;
     Button start;
     Button joker;
-    
+    //eckige Klammern*/
     FRAGE frage1;
     FRAGE frage2;
     FRAGE frage3;
