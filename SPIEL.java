@@ -14,9 +14,12 @@
         
         
         }
-     //*Felder erstellen um Fragen zu managen 
+     /**
+      * 
+      Felder erstellen um Fragen zu managen 
      for(int i = 0 ;i<10,i++)
      {
          frage[i] anzeigen 0;
         }
+        */
     }
