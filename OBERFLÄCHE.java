@@ -12,11 +12,9 @@ class OBERFLÄCHE
     Button antwortD;
     Button start;
     Button joker;
-    //eckige Klammern*/
+    boolean string;
+    int frageNummer;
     FRAGE frage1;
-    FRAGE frage2;
-    FRAGE frage3;
-    FRAGE frage4;
     
 
     /**
@@ -24,30 +22,49 @@ class OBERFLÄCHE
      */
     OBERFLÄCHE()
     {
+        frage1=new FRAGE();
+        frage1.fragestellung="Welche Farbe hat Gras?";
+        frage1.antwortA = "Rot";
+        frage1.antwortB = "Grün";
+        frage1.antwortC = "Gelb";
+        frage1.antwortD = "Infrarot";
+        equals(antwortB);
+        
+        frageNummer = 1;
         fenster = new Frame("OB");
         fenster.setSize(600,400);
         fenster.setLocation(0,30);
         fenster.setVisible(true);
         fenster.setLayout(null);
         
+        String[] frage = new String[] 
+        {
+            "TEst",
+            "TEst2"
+        };
+        
         fragetext = new Label();
-        fragetext.setText("Hier steht später die Frage und ggf. die Antworten.");
+        fragetext.setText(frage1.fragestellung);
         fragetext.setVisible(true);
         fragetext.setLocation(100,50);
         fragetext.setSize(400,50);
         fenster.add(fragetext);
+    
         
         antwortA = new Button();
         antwortA.setLocation(100,180);
-        antwortA.setLabel("A");
+        antwortA.setLabel(frage1.antwortA);
         antwortA.setVisible(true);
         antwortA.setSize(100,30);
         antwortA.setEnabled(true);
+        //*Farbe setzen
         antwortA.addActionListener(new ActionListener()
         {
             public void actionPerformed(ActionEvent e)
             {
-                 //Hier wird die Antwort A ausgewählt
+               //*if actionPerformed = ("true") boolean 
+               //* anwortA.setColour("
+               
                 
                 
         }
@@ -56,7 +73,7 @@ class OBERFLÄCHE
         
         antwortB = new Button();
         antwortB.setLocation(400,180);
-        antwortB.setLabel("B");
+        antwortB.setLabel(frage1.antwortB);
         antwortB.setVisible(true);
         antwortB.setSize(100,30);
         antwortB.setEnabled(true);
@@ -73,7 +90,7 @@ class OBERFLÄCHE
         
         antwortC = new Button();
         antwortC.setLocation(100,280);
-        antwortC.setLabel("C");
+        antwortC.setLabel(frage1.antwortC);
         antwortC.setVisible(true);
         antwortC.setSize(100,30);
         antwortC.setEnabled(true);
@@ -90,7 +107,7 @@ class OBERFLÄCHE
         
         antwortD = new Button();
         antwortD.setLocation(400,280);
-        antwortD.setLabel("D");
+        antwortD.setLabel(frage1.antwortD);
         antwortD.setVisible(true);
         antwortD.setSize(100,30);
         antwortD.setEnabled(true);
@@ -140,33 +157,27 @@ class OBERFLÄCHE
         fenster.add(joker);
 
         //*Fragenliste
-        frage1=new FRAGE();
-        frage1.fragestellung="Welche Farbe hat Gras?";
-        frage1.antwortA = "Rot";
-        frage1.antwortB = "Grün";
-        frage1.antwortC = "Gelb";
-        frage1.antwortD = "Infrarot";
+                
+        // frage2=new FRAGE();
+        // frage2.fragestellung="Wie hieß das Forschungsschiff von Charles Darwin?";
+        // frage2.antwortA = "Dove";
+        // frage2.antwortB = "Dolphin";
+        // frage2.antwortC = "Beagle";
+        // frage2.antwortD = "Calypso";
         
-        frage2=new FRAGE();
-        frage2.fragestellung="Wie hieß das Forschungsschiff von Charles Darwin?";
-        frage2.antwortA = "Dove";
-        frage2.antwortB = "Dolphin";
-        frage2.antwortC = "Beagle";
-        frage2.antwortD = "Calypso";
+        // frage3=new FRAGE();
+        // frage3.fragestellung="Wie heißt das flächenmäßig kleinste Bundesland Deutschlands?";
+        // frage3.antwortA = "Berlin";
+        // frage3.antwortB = "Bremen";
+        // frage3.antwortC = "Saarland";
+        // frage3.antwortD = "Hamburg";
         
-        frage3=new FRAGE();
-        frage3.fragestellung="Wie heißt das flächenmäßig kleinste Bundesland Deutschlands?";
-        frage3.antwortA = "Berlin";
-        frage3.antwortB = "Bremen";
-        frage3.antwortC = "Saarland";
-        frage3.antwortD = "Hamburg";
-        
-        frage4=new FRAGE();
-        frage4.fragestellung="Was bedeutet der lateiniche Ausdruck ´carpe diem´?";
-        frage4.antwortA = "Genieße das Leben";
-        frage4.antwortB = "Nutze den Tag";
-        frage4.antwortC = "Dein Tag wird toll werden";
-        frage4.antwortD = "Man sieht sich immer zweimal im Leben";
+        // frage4=new FRAGE();
+        // frage4.fragestellung="Was bedeutet der lateiniche Ausdruck ´carpe diem´?";
+        // frage4.antwortA = "Genieße das Leben";
+        // frage4.antwortB = "Nutze den Tag";
+        // frage4.antwortC = "Dein Tag wird toll werden";
+        // frage4.antwortD = "Man sieht sich immer zweimal im Leben";
         
         
         
