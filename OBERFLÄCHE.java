@@ -30,6 +30,8 @@ class OBERFLÄCHE
         frage1.antwortD = "Infrarot";
         equals(antwortB);
         mu
+        
+        
         fragex=new FRAGE();
         fragex.fragestellung="?";
         fragex.antwortA = "";
@@ -135,7 +137,7 @@ class OBERFLÄCHE
         frage15.antwortC = "1950";
         frage15.antwortD = "1935";
 
-frage16=new FRAGE();
+        frage16=new FRAGE();
         frage16.fragestellung="In welcher Stadt lebt die Zeichentrick-Familie Simpsons?";
         frage16.antwortA = "New York";
         frage16.antwortB = "Springfield";
@@ -170,7 +172,77 @@ frage16=new FRAGE();
         frage20.antwortC = "Ein Pilz";
         frage20.antwortD = "Eine Gedichtsform";
 
-
+        frage21=new FRAGE();
+        frage21.fragestellung="Welcher Ozean liegt zwischen Europa und Amerika?";
+        frage21.antwortA = "Atlantischer Ozean";
+        frage21.antwortB = "Indischer Ozean";
+        frage21.antwortC = "Karibisches Meer";
+        frage21.antwortD = "Pazifischer Ozean";
+        
+        frage22=new FRAGE();
+        frage22.fragestellung="Wer schrieb die Harry Potter Bücher?";
+        frage22.antwortA = "E.L. James";
+        frage22.antwortB = "J.R.R. Tolkien";
+        frage22.antwortC = "George R.R. Martin";
+        frage22.antwortD = "Joanne K. Rowling";
+        
+        frage23=new FRAGE();
+        frage23.fragestellung="Wie viele Tasten hat ein Klavier?";
+        frage23.antwortA = "88";
+        frage23.antwortB = "70";
+        frage23.antwortC = "65";
+        frage23.antwortD = "80";
+        
+        frage24=new FRAGE();
+        frage24.fragestellung="Was ist die Hauptstadt von Portugal?";
+        frage24.antwortA = "Porto";
+        frage24.antwortB = "Lissabon";
+        frage24.antwortC = "Lago";
+        frage24.antwortD = "Tavira";
+        
+        frage25=new FRAGE();
+        frage25.fragestellung="Wie viele Herzen hat ein Oktopus?";
+        frage25.antwortA = "Zwei";
+        frage25.antwortB = "Drei";
+        frage25.antwortC = "Vier";
+        frage25.antwortD = "Keines";
+        
+        frage26=new FRAGE();
+        frage26.fragestellung="Wie lange hat Goethe an seinem Werk ´Faust´ gearbeitet?";
+        frage26.antwortA = "20 Jahre";
+        frage26.antwortB = "64 Jahre";
+        frage26.antwortC = "34 Jahre";
+        frage26.antwortD = "10 Jahre";
+        
+        frage27=new FRAGE();
+        frage27.fragestellung="Welcher ist der längste Fluss der Welt?";
+        frage27.antwortA = "Nil";
+        frage27.antwortB = "Amazonas";
+        frage27.antwortC = "Donau";
+        frage27.antwortD = "Rhein";
+        
+        frage28=new FRAGE();
+        frage28.fragestellung="In welchem Land wohnen die meißten Menschen?";
+        frage28.antwortA = "China";
+        frage28.antwortB = "USA";
+        frage28.antwortC = "Russland";
+        frage28.antwortD = "Kanada";
+        
+        frage29=new FRAGE();
+        frage29.fragestellung="Wie viel Prozent der Erde sind circa von Wasser bedeckt?";
+        frage29.antwortA = "50 Prozent";
+        frage29.antwortB = "60 Prozent";
+        frage29.antwortC = "70 Prozent";
+        frage29.antwortD = "80 Prozent";
+        
+        frage30=new FRAGE();
+        frage30.fragestellung="Von welchem Kontinent aus begann die Verbreitung des Homo sapiens?";
+        frage30.antwortA = "Asien";
+        frage30.antwortB = "Afrika";
+        frage30.antwortC = "Amerika";
+        frage30.antwortD = "Europa";
+        
+        
         
         
         frageNummer = 1;
@@ -328,10 +400,11 @@ frage16=new FRAGE();
         
     
 }
-      //Hintergrund gestallten,färben*/
+      //Hintergrund gestalten,färben*/
   
-     //*wie verbinde ich frage mit den buttons/Feldern
-     //* Wie schaffe ich es dass die Frage + Antwort aufgerufen wird  
+     //*Wie verbinde ich frage mit den buttons/Feldern
+     //*Endbildschirm,wo Gesamtpunktzahl und maximal erreichbare Punkzahl angezeigt werden
+     //*Wie schaffe ich es dass die Frage + Antwort aufgerufen wird  
       //festlegen wie oft man Joker verwenden kann und was beim Auswählen passiert*/
      //*Startbutton einfügen und überlegen wie Oberfläche entscheidet wann nächste Frage geöffnet oder angezeigt wird
 }
