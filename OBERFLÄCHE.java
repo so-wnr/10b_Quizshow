@@ -7,25 +7,22 @@
  */
 class OBERFLÄCHE
 {
-    {FRAGE fragefeld;
-    JOKER jokerfeld;
-    /**
-     * 
-     *PUNKTESTAND punktefeld;
-     *ANTWORT möglichkeiten;
-    int x;
-    int y;
-    OBERFLÄCHE()
-    {
-       fragefeld = new FRAGE();
-       fragefeld.FarbeSetzen();
-       fragefeld.PositionSetzen(x, y);
-       jokerfeld = new JOKER();
-       jokerfeld.FarbeSetzen();
-       jokerfeld.PositionSetzen(x, y);
-       punktefeld = new PUNKTESTAND();
-       punktefeld.FarbeSetzen();
-       punktefeld.PositionSetzen(x, y);     
-       */ 
-    }   
+   
+       Frame fenster;
+       Label fragetext;
+       Button antwortA;
+       Button antwortB;
+       Button antwortC;
+       Button antwortD;
+       
+       /**
+        * Konstruktor für Objekte der Klasse OBERFLÄCHE 
+        */
+       OBERFLÄCHE() 
+       {
+           fenster = new Frame(Frage);
+           fenster.setSize(700,500);
+           
+       }  
 }
+
