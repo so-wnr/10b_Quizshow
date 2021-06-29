@@ -39,6 +39,8 @@ class OBERFLÄCHE
         fragex.antwortC = "";
         fragex.antwortD = "";
         
+        //*Fragenliste
+        
         frage2=new FRAGE();
         frage2.fragestellung="Wie hieß das Forschungsschiff von Charles Darwin?";
         frage2.antwortA = "Dove";
@@ -371,29 +373,6 @@ class OBERFLÄCHE
         }); 
         fenster.add(joker);
 
-        //*Fragenliste
-                
-        // frage2=new FRAGE();
-        // frage2.fragestellung="Wie hieß das Forschungsschiff von Charles Darwin?";
-        // frage2.antwortA = "Dove";
-        // frage2.antwortB = "Dolphin";
-        // frage2.antwortC = "Beagle";
-        // frage2.antwortD = "Calypso";
-        
-        // frage3=new FRAGE();
-        // frage3.fragestellung="Wie heißt das flächenmäßig kleinste Bundesland Deutschlands?";
-        // frage3.antwortA = "Berlin";
-        // frage3.antwortB = "Bremen";
-        // frage3.antwortC = "Saarland";
-        // frage3.antwortD = "Hamburg";
-        
-        // frage4=new FRAGE();
-        // frage4.fragestellung="Was bedeutet der lateiniche Ausdruck ´carpe diem´?";
-        // frage4.antwortA = "Genieße das Leben";
-        // frage4.antwortB = "Nutze den Tag";
-        // frage4.antwortC = "Dein Tag wird toll werden";
-        // frage4.antwortD = "Man sieht sich immer zweimal im Leben";
-        
         
         
         
@@ -403,7 +382,7 @@ class OBERFLÄCHE
       //Hintergrund gestalten,färben*/
   
      //*Wie verbinde ich frage mit den buttons/Feldern
-     //*Endbildschirm,wo Gesamtpunktzahl und maximal erreichbare Punkzahl angezeigt werden
+     //*Endbildschirm,wo Gesamtpunktzahl und maximal erreichbare Punkzahl angezeigt werden einfügen
      //*Wie schaffe ich es dass die Frage + Antwort aufgerufen wird  
       //festlegen wie oft man Joker verwenden kann und was beim Auswählen passiert*/
      //*Startbutton einfügen und überlegen wie Oberfläche entscheidet wann nächste Frage geöffnet oder angezeigt wird
