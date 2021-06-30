@@ -1,18 +1,19 @@
-
-/**
- * Beschreiben Sie hier die Klasse FRAGE.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
-class FRAGE extends OBERFLÄCHE 
+ 
+//die Klasse Frage dreht sich um die einzelnen Fragefelder und legt fest, wie es funktioniert*/
+class FRAGE
 {
-    FRAGE fragestellung;
-    int x;
-    int y;
+    String fragestellung;
+    String[] antworten;
+    int richtig;
     
-    FRAGE()
+    
+    FRAGE(String _fragestellung, String[] _antworten, int _richtig)
     {
-        fragestellung = new FRAGE();
+        fragestellung = _fragestellung;
+        antworten = _antworten;
+        richtig = _richtig;
     }
+    
+    
+    
 }
