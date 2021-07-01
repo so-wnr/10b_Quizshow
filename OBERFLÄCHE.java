@@ -32,6 +32,10 @@ class OBERFLÄCHE
         String fragestellung1 = "Welche Farbe hat Gras?";
         String[] antworten1 = new String[] {"Rot", "Grün", "Gelb", "Infrarot"};
         fragen[1] = new FRAGE(fragestellung1, antworten1, 1);
+        
+        String fragestellung2 = "Welches ist das klkeinste Bundesland Deutschlands?";
+        String[] antworten2 = new String[] {"Berlin", "Bremen", "Saarland", "Hamburg"};
+        fragen[2] = new FRAGE(fragestellung2, antworten2, 1);
     }
     
     private void zeigeFrage(int frageNummer) {
