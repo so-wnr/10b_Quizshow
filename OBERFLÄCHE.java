@@ -6,6 +6,7 @@ class OBERFLÄCHE
 {
     Frame fenster;
     Label fragetext;
+
     Label richtige;
     Button antwortA;
     Button antwortB;
@@ -19,9 +20,21 @@ class OBERFLÄCHE
     int fragenZaehler;
     int anzahlRichtige;
 
+    //*Button antwortA;
+    //Button antwortB;
+    //Button antwortC;
+    //Button antwortD;
+    //Button start;
+    //Button joker;
+    //boolean string;
+    //int frageNummer;
+    //FRAGE frage1;
+    
+
     /**
      * Konstruktor für Objekte der Klasse OBERFLÄCHE
      */
+
     
     private void ladeFragen() {
         
@@ -57,10 +70,9 @@ class OBERFLÄCHE
             return false;
         }
     }    
-    
-    
     OBERFLÄCHE()
     {
+
         
         fenster = new Frame("QUIZ");
         fenster.setSize(600,400);
@@ -239,12 +251,7 @@ class OBERFLÄCHE
         
         
         
-}
-      //Hintergrund gestalten,färben*/
-  
-     //*Wie verbinde ich frage mit den buttons/Feldern
-     //*Endbildschirm,wo Gesamtpunktzahl und maximal erreichbare Punkzahl angezeigt werden einfügen
-     //*Wie schaffe ich es dass die Frage + Antwort aufgerufen wird  
-      //festlegen wie oft man Joker verwenden kann und was beim Auswählen passiert*/
-     //*Startbutton einfügen und überlegen wie Oberfläche entscheidet wann nächste Frage geöffnet oder angezeigt wird
-}
+   }
+}  
+        
+       
