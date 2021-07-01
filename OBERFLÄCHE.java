@@ -33,7 +33,7 @@ class OBERFLÄCHE
         String[] antworten1 = new String[] {"Rot", "Grün", "Gelb", "Infrarot"};
         fragen[1] = new FRAGE(fragestellung1, antworten1, 1);
         
-        String fragestellung2 = "Welches ist das klkeinste Bundesland Deutschlands?";
+        String fragestellung2 = "Welches ist das kleinste Bundesland Deutschlands?";
         String[] antworten2 = new String[] {"Berlin", "Bremen", "Saarland", "Hamburg"};
         fragen[2] = new FRAGE(fragestellung2, antworten2, 1);
     }
