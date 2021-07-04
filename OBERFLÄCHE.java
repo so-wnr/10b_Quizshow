@@ -6,7 +6,8 @@ class OBERFLÄCHE
 {
     Frame fenster;
     Label fragetext;
-
+    Label fertig;
+    
     Label richtige;
     Button antwortA;
     Button antwortB;
@@ -16,17 +17,14 @@ class OBERFLÄCHE
     Button start;
     Button joker;
     boolean string;
-    FRAGE[] fragen = new FRAGE[2];
+    
+    // Wichtigte Variable in dem Programm
+    FRAGE[] fragen = new FRAGE[4];
+    
     int fragenZaehler;
     int anzahlRichtige;
 
-    //*Button antwortA;
-    //Button antwortB;
-    //Button antwortC;
-    //Button antwortD;
-    //Button start;
-    //Button joker;
-    //boolean string;
+ 
     int frageNummer;
     FRAGE frage1;
     
@@ -46,9 +44,14 @@ class OBERFLÄCHE
         String[] antworten1 = new String[] {"Rot", "Grün", "Gelb", "Infrarot"};
         fragen[1] = new FRAGE(fragestellung1, antworten1, 1);
         
-        //String fragestellung2 = "Welches ist das kleinste Bundesland Deutschlands?";
-        //String[] antworten2 = new String[] {"Berlin", "Bremen", "Saarland", "Hamburg"};
-        //fragen[2] = new FRAGE(fragestellung2, antworten2, 1);
+        String fragestellung2 = "Welches ist das kleinste Bundesland Deutschlands?";
+        String[] antworten2 = new String[] {"Berlin", "Bremen", "Saarland", "Hamburg"};
+        fragen[2] = new FRAGE(fragestellung2, antworten2, 1);
+        
+        String fragestellung3 = "Was bedeutet der lateinische Ausdruck 'carpe diem'?";
+        String[] antworten3 = new String[] {"Genieße das Leben", "Dein Tag wird toll werden", "Nutze den Tag", "Sei dir der Sterblichkeit bewusst"};
+        fragen[3] = new FRAGE(fragestellung3, antworten3, 2);
+        
     }
     
     private void zeigeFrage(int frageNummer) {
@@ -86,6 +89,12 @@ class OBERFLÄCHE
         fragetext.setSize(400,20);
         fenster.add(fragetext);
         
+        fertig = new Label();
+        fertig.setVisible(false);
+        fertig.setLocation(250,150);
+        fertig.setSize(400,20);
+        fenster.add(fertig);
+        
         richtige = new Label();
         richtige.setText("Anzahl richtige: ");
         richtige.setVisible(false);
@@ -106,6 +115,17 @@ class OBERFLÄCHE
                 fragenZaehler++;
                 if(fragenZaehler < fragen.length) {
                     zeigeFrage(fragenZaehler);
+                } else {
+                    fragetext.setVisible(false);
+                    richtige.setVisible(false);
+                    antwortA.setVisible(false);
+                    antwortB.setVisible(false);
+                    antwortC.setVisible(false);
+                    antwortD.setVisible(false);
+                    joker.setVisible(false);
+                    
+                    fertig.setText("Ende! " + anzahlRichtige + " richtige Antwort(en)");
+                    fertig.setVisible(true);
                 }
                 Color standardFarbe = new Color(240, 240, 240);
                 antwortA.setBackground(standardFarbe);
