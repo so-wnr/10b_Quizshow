@@ -36,12 +36,12 @@ class OBERFLÄCHE
     
     private void ladeFragen() {
         
-        String fragestellung0 = "Von welchem Kontinent aus begann die Verbreitung des Homo sapiens?";
-        String[] antworten0 = new String[] {"Asien", "Afrika", "Amerika", "Europa"};
+        String fragestellung0 = "Welche Farbe hat das Blut von Perlbooten?";
+        String[] antworten0 = new String[] {"Blau", "Gelb", "Grün", "Rot"};
         fragen[0] = new FRAGE(fragestellung0, antworten0, 0);
         
-        String fragestellung1 = "Welche Farbe hat Gras?";
-        String[] antworten1 = new String[] {"Rot", "Grün", "Gelb", "Infrarot"};
+        String fragestellung1 = "Wie hieß die Band, die 'Bohemian Rapsodie' geschrieben hat?";
+        String[] antworten1 = new String[] {"Rolling Stones", "Queen", "ACDC", "Metallica"};
         fragen[1] = new FRAGE(fragestellung1, antworten1, 1);
         
         String fragestellung2 = "Welches ist das kleinste Bundesland Deutschlands?";
@@ -57,7 +57,7 @@ class OBERFLÄCHE
         fragen[4] = new FRAGE(fragestellung4, antworten4, 1);
         
         String fragestellung5 = "Welche Farbe gibt es nicht in der Kampfsportart Karate'?";
-        String[] antworten5 = new String[] {"weiß", "schwarz", "grün", "rot"};
+        String[] antworten5 = new String[] {"weiß", "schwarz", "grün", "lila"};
         fragen[5] = new FRAGE(fragestellung5, antworten5, 3);
         
         String fragestellung6 = "Welcher dieser Schauspieler verkörperte nie James Bond?";
@@ -116,7 +116,7 @@ class OBERFLÄCHE
         String[] antworten19 = new String[] {"2", "4", "3", "8"};
         fragen[19] = new FRAGE(fragestellung19, antworten19, 2);
         
-        String fragestellung20 = "Wie lange hat Goethe an seinem Werk ´Faust´ gearbeitet?";
+        String fragestellung20 = "Wie viele Jahre hat Goethe an seinem Werk ´Faust´ gearbeitet?";
         String[] antworten20 = new String[] {"20", "36", "64", "10"};
         fragen[20] = new FRAGE(fragestellung20, antworten20, 1);
     }
