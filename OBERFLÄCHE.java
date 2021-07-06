@@ -1,4 +1,4 @@
- 
+  
 import java.awt.*;
 import java.awt.event.*;
 
@@ -329,10 +329,22 @@ class OBERFLÄCHE
         joker.addActionListener(new ActionListener()
         {
             public void actionPerformed(ActionEvent e)
-            {
-                 //Hier wählt man den Joker      
-                
-                
+            {    
+                fragenZaehler++;
+                if(fragenZaehler < fragen.length) {
+                    zeigeFrage(fragenZaehler);
+                } else {
+                    fragetext.setVisible(false);
+                    richtige.setVisible(false);
+                    antwortA.setVisible(false);
+                    antwortB.setVisible(false);
+                    antwortC.setVisible(false);
+                    antwortD.setVisible(false);
+                    joker.setVisible(false);   
+                                    }
+                joker.setVisible(false);
+                anzahlRichtige++; 
+                richtige.setText("Anzahl Richtige: " + anzahlRichtige);
         }
         }); 
         fenster.add(joker);
